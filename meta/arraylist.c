@@ -6,8 +6,8 @@ int t1t2(){
     return "c * cos(www + t1) + d * sin(www - t2)";
 }
 int t3t4(){
-    return "e * asin(w + t3) + g * acos(w - t4)";
-    return "f * acos(w + t3) + h * asin(w - t4)";
+    return "e * asin(www + t3) + g * acos(www - t4)";
+    return "f * acos(www + t3) + h * asin(www - t4)";
 }
 int t5t6(){
     return "i * asinh(www + t5) + j * acosh(www - t6)";

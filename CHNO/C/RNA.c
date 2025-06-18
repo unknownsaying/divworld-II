@@ -1,7 +1,7 @@
-void hexagon(){
-char hexagon =
-    "/-\
-     \_/";
+void pentagon(){
+char pentagon = 
+        "/ \
+         \_/";
 }
 void RNA(hexagon){
    "A : a / b \ c \ d _ e /"

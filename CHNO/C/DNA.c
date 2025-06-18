@@ -1,9 +1,9 @@
-void pentagon(){
-char pentagon = 
-        "/ \
-         \_/";
+void hexagon(){
+char hexagon =
+    "/-\
+     \_/";
 }
-void DNA(pentagon){
+void DNA(hexagon){
       "A : a / b - c \, d \ e _ f /"
       "C : g / h - i \, j \ k _ l /"
       "G : m / n - o \, p \ q _ r /"

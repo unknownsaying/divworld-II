@@ -10,9 +10,9 @@ import random
 import time
 import numpy as np
 
-# ========================
+
 # Constants and Types
-# ========================
+
 
 alias CHUNK_SIZE = 16
 alias WORLD_HEIGHT = 256
@@ -62,9 +62,9 @@ enum Quark:
     Top
     Up
 
-# ========================
+
 # Block Data
-# ========================
+
 
 struct BlockData:
     var type: Quark
@@ -76,9 +76,9 @@ struct BlockData:
             transparent = True
         return Self {type: type, is_transparent: transparent}
 
-# ========================
+
 # Chunk System
-# ========================
+
 
 class Chunk:
     var position: ChunkPosition
@@ -271,9 +271,9 @@ class Chunk:
         glCallList(self.display_list)
         glPopMatrix()
 
-# ========================
+
 # World Management
-# ========================
+
 
 class World:
     var chunks: Dict[ChunkPosition, Chunk]
@@ -329,9 +329,9 @@ class World:
         for chunk in self.chunks.values():
             chunk.render()
 
-# ========================
+
 # Player System
-# ========================
+
 
 class Player:
     var position: Vector3
@@ -474,9 +474,9 @@ class Player:
             self.position.z
         )
 
-# ========================
+
 # Input System
-# ========================
+
 
 class InputHandler:
     var mouse_sensitivity: Float32
@@ -570,9 +570,9 @@ class InputHandler:
             cos(pitch) * cos(yaw)
         )
 
-# ========================
+
 # Rendering System
-# ========================
+
 
 class Renderer:
     var fov: Float32
@@ -627,9 +627,9 @@ class Renderer:
         # Update light position to follow player
         glLightfv(GL_LIGHT0, GL_POSITION, (eye_pos.x, eye_pos.y + 10, eye_pos.z, 1.0))
 
-# ========================
+
 # Main Game Loop
-# ========================
+
 
 fn main():
     # Initialize pygame and OpenGL
